@@ -13,8 +13,16 @@
     'data': [
         'security/ir.model.access.csv',
         'views/my_pet_views.xml',
+        'wizard/batch_update.xml',
+        # 'views/templates.xml',
     ],
     # 'qweb': ['static/src/xml/*.xml'],
     'installable': True,
     'application': True,
+    'assets': {
+        'web.assets_backend': {
+            'mypet/static/src/js/bold.js',
+        },
+    },
+
 }

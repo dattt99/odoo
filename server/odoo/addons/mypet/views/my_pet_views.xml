@@ -24,7 +24,7 @@
                             </group>          
                         </group>
                          <group>
-                                <field name="basic_price"/>
+                                <field name="basic_price" widget="bold_red"/>
                                 <field name="age"/>
                                 <field name="weight"/>
                         </group>                  
@@ -32,7 +32,7 @@
                             <page name="general_information" string="General Information">
 								<group>
 									<group>
-										<field name="nickname"/>
+										<field name="nickname" widget="bold_red"/>
 									</group>
 									<group>
 										<label for="description" colspan="2"/>
