@@ -21,8 +21,13 @@
                             <group>
                                 <field name="dob"/>
                                 <field name="gender"/>
-                            </group>                            
+                            </group>          
                         </group>
+                         <group>
+                                <field name="basic_price"/>
+                                <field name="age"/>
+                                <field name="weight"/>
+                        </group>                  
                         <notebook>
                             <page name="general_information" string="General Information">
 								<group>
@@ -71,6 +76,7 @@
             <field name="name">My Pet</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">my.pet</field>
+            <!-- <field name="view_type">form</field> --> <!-- Odoo 13 has removed this field -->
             <field name="view_ids" eval="[(5, 0, 0),
                 (0, 0, {'view_mode': 'tree', 'view_id': ref('my_pet_tree_view')}),
                 (0, 0, {'view_mode': 'form', 'view_id': ref('my_pet_form_view')})]"/>

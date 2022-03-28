@@ -16,10 +16,12 @@ class MyPet(models.Model):
         ('male', 'Male'),
         ('female', 'Female')
     ], string='Gender', default='male')
-    pet_image = fields.Binary("Pet Image", attachment=True, help="Pet Image")
+    pet_image = fields.Binary("Pet Image", attachment=True, help="Pet Image")    
     owner_id = fields.Many2one('res.partner', string='Owner')
-    product_ids = fields.Many2many(comodel_name='product.product',
-                                string="Related Products",
+    product_ids = fields.Many2many(comodel_name='product.product', 
+                                string="Related Products", 
                                 relation='pet_product_rel',
                                 column1='col_pet_id',
                                 column2='col_product_id')
+    
+    basic_price = fields.Float('Basic Price', default=0)
