@@ -60,14 +60,16 @@
             <field name="name">my.pet.tree.view</field>
             <field name="model">my.pet</field>
             <field name="arch" type="xml">
-                <tree string="Pets" default_order="create_date desc">
+                  <tree string="Pets" default_order="create_date desc">
                     <field name="name"/>
                     <field name="nickname"/>
                     <field name="age"/>
-                    <field name="weight"/>                    
+                    <field name="weight"/>
                     <field name="dob"/>
                     <field name="gender"/>
                     <field name="owner_id"/>
+                    <!-- thêm dòng sau: -->
+                    <button name="custom_remove" type="object" string="Remove" class="oe_highlight"/>
                 </tree>
             </field>
         </record>

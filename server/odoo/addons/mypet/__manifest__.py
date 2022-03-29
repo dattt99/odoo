@@ -15,6 +15,7 @@
         'views/my_pet_views.xml',
         'wizard/batch_update.xml',
         # 'views/templates.xml',
+        'views/res_config_settings_views.xml',  # <-- add this
     ],
     # 'qweb': ['static/src/xml/*.xml'],
     'installable': True,
@@ -22,6 +23,10 @@
     'assets': {
         'web.assets_backend': {
             'mypet/static/src/js/bold.js',
+            'mypet/static/src/js/btn_tree_multi_update.js',
+        },
+        'web.assets_qweb': {
+            'mypet/static/src/xml/btn_tree_multi_update.xml',
         },
     },
 
